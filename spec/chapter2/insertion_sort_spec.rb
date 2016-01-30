@@ -15,7 +15,7 @@ describe InsertionSort do
 
   it 'sorts a random array decreeasing the same way Ruby does' do
     input = (1..100).map { rand(100) }
-    output = InsertionSort.insertion_sort_decreasing(input)
+    output = InsertionSort.insertion_sort(input, :decreasing)
     expect(output).to eq input.sort.reverse
   end
 end
