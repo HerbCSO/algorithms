@@ -5,8 +5,3 @@ rescue LoadError
 end
 
 task default: [:spec]
-
-task :spec do
-  rspec
-end
-
